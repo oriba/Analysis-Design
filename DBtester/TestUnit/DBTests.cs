@@ -13,17 +13,25 @@ namespace TestUnit
         DB db;
 
         [Test]
+        public void connectionTest()
+        {
+            string serverPath = "blablabla";
+            db.connection(serverPath);
+        }
+
+        [Test]
+        public void connectionFailureTest()
+        {
+            string serverPath = "blablabla";
+            db.connection(serverPath);
+            //suposed to throw an error 
+        }
+
+        [Test]
         public void add()
         {
-            string newCutomerQuery = " "; //change the string
-            db.addAndRemove(newCutomerQuery);
-            string newOwnerQuery = " "; //change the string
-            db.addAndRemove(newOwnerQuery);
-            string newbusinessQuery = " "; //change the string
-            db.addAndRemove(newbusinessQuery);
-            string newCouponMakerQuery = " "; //change the string
-            db.addAndRemove(newCouponMakerQuery);
-            //The test should not make a exception & 
+            string newCustomerQuery = "INSERT INTO Customer VALUES (1111,Aviram,Adiri,aa@gmail.com,0523908209,26,0000);";
+            db.addAndRemove(newCustomerQuery);
         }
 
         [Test]
