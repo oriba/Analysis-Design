@@ -1,0 +1,7 @@
+C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\TestUnit.dll
+C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\TestUnit.pdb
+C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\nunit.framework.dll
+C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\nunit.framework.xml
+C:\Users\aviram\Desktop\DBtester\TestUnit\obj\Debug\TestUnit.csprojResolveAssemblyReference.cache
+C:\Users\aviram\Desktop\DBtester\TestUnit\obj\Debug\TestUnit.dll
+C:\Users\aviram\Desktop\DBtester\TestUnit\obj\Debug\TestUnit.pdb

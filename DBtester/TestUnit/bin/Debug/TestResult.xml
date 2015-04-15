@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\TestUnit.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-15" time="18:44:19">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\aviram\Desktop\DBtester\NUnit-2.6.3\bin" machine-name="AVIRAM-ADIRI" user="aviram" user-domain="AVIRAM-ADIRI" />
+  <culture-info current-culture="he-IL" current-uiculture="he-IL" />
+  <test-suite type="Assembly" name="C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\TestUnit.dll" executed="True" result="Success" success="True" time="0.115" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="TestUnit" executed="True" result="Success" success="True" time="0.094" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="DBTests" executed="True" result="Success" success="True" time="0.091" asserts="0">
+            <results>
+              <test-case name="TestUnit.DBTests.negativeTest" executed="True" result="Success" success="True" time="0.064" asserts="1" />
+              <test-case name="TestUnit.DBTests.positiveTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
