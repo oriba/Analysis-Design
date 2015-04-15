@@ -8,5 +8,29 @@ namespace TestUnit
 {
     class DB
     {
+        public void connection(String path)
+        {
+            //add a body here...
+        }
+
+        public void addAndRemove(string query)
+        {
+            //add a body here...
+        }
+
+        public void update(string query)
+        {
+            //add a body here...
+        }
+
+        public void simpleQuery(string query)
+        {
+            //add a body here...
+        }
+
+        public void advanceQuery(string query)
+        {
+            //add a body here...
+        }
     }
 }
