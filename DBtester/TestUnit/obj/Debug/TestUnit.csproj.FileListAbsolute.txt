@@ -5,3 +5,4 @@ C:\Users\aviram\Desktop\DBtester\TestUnit\bin\Debug\nunit.framework.xml
 C:\Users\aviram\Desktop\DBtester\TestUnit\obj\Debug\TestUnit.csprojResolveAssemblyReference.cache
 C:\Users\aviram\Desktop\DBtester\TestUnit\obj\Debug\TestUnit.dll
 C:\Users\aviram\Desktop\DBtester\TestUnit\obj\Debug\TestUnit.pdb
+C:\Users\obarilan\Documents\University\Analysis-Design\DBtester\TestUnit\obj\Debug\TestUnit.csprojResolveAssemblyReference.cache
