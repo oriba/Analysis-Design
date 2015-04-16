@@ -81,12 +81,35 @@ Create table Coupon(
 serialCode int,
 isActive boolean,
 couponMaker int,
-customer vatchar(30),
+customer varchar(30),
 primary key(serialCode)
 foreign key(couponMaker) references CouponMaker(id),
 foreign key(customer) references Customer(id)
 );
 
+Create table CustomerHistory(
+customerID int,
+couponID int,
+primary key(customerID, couponID),
+foreign key(customerID) references Customer(id),
+foreign key(couponID) references Coupon(id),
+);
+
+Create table CustomerFavorites(
+customerID int,
+categoryID int,
+primary key(customerID, categoryID),
+foreign key(customerID) references Customer(id),
+foreign key(categoryID) references Category(id),
+);
+
+Create table BusinessStatistics(
+businessID int,
+rating int,
+moneyEarned int,
+primary key(businessID),
+foreign key(businessID) references Business(id),
+);
 ----------------------------------
 insert into Customer
 values ("111111111","ori","BE","ori@gmail.com","0502893789",26,"111");
