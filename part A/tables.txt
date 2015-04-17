@@ -88,7 +88,7 @@ foreign key(customer) references Customer(id)
 );
 
 Create table CustomerHistory(
-customerID int,
+customerID varchar(9),
 couponID int,
 primary key(customerID, couponID),
 foreign key(customerID) references Customer(id),
@@ -96,7 +96,7 @@ foreign key(couponID) references Coupon(id),
 );
 
 Create table CustomerFavorites(
-customerID int,
+customerID varchar(9),
 categoryID int,
 primary key(customerID, categoryID),
 foreign key(customerID) references Customer(id),
