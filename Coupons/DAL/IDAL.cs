@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    interface IDAL
+    public interface IDAL
     {
-        /*Queries*/
-        //
+        /* constructor call */
+        IDAL create();
+
+        /* Queries */
         //Admin
-        public bool AdminExistsByKey(string id); /*for testing: does id exist in DB*/
-        public void AdminInsert(string id, string fname, string lname, string email, string phone, string password);
-        public void AdminUpdateByKey(string whereID, string fname, string lname, string email, string phone, string password);
-        public void AdminDeleteByKey(string whereID);
+        bool AdminExistsByKey(string id); /*for testing: does id exist in DB*/
+        void AdminInsert(string id, string fname, string lname, string email, string phone, string password);
+        void AdminUpdateByKey(string whereID, string fname, string lname, string email, string phone, string password);
+        void AdminDeleteByKey(string whereID);
         //Customer
-        public bool CustomerExistsByKey(string id); /*for testing: does id exist in DB*/
-        public void CustomerInsert(string id, string fname, string lname, string email, string phone, int age, string password);
-        public void CustomerUpdateByKey(string whereID, string fname, string lname, string email, string phone, int age, string password);
-        public void CustomerDeleteByKey(string whereID);
+        bool CustomerExistsByKey(string id); /*for testing: does id exist in DB*/
+        void CustomerInsert(string id, string fname, string lname, string email, string phone, int age, string password);
+        void CustomerUpdateByKey(string whereID, string fname, string lname, string email, string phone, int age, string password);
+        void CustomerDeleteByKey(string whereID);
     }
 }
