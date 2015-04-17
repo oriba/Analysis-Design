@@ -27,7 +27,7 @@ namespace DAL
             CouponsDataSetTableAdapters.AdminTableAdapter adminAdapter = new CouponsDataSetTableAdapters.AdminTableAdapter();
             //testing INSERT query
             adminAdapter.InsertAdmin("303013114", "dima", "dimitry", "dima@dimahoo.com", "0542222333", "1234");
-
+            //
         }
    
     }
