@@ -11,9 +11,6 @@ namespace Starter
     {
         static void Main(string[] args)
         {
-            CDAL db = new CDAL();
-            db.test1();
-            //
         }
     }
 }
