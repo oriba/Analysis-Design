@@ -8,9 +8,6 @@ namespace DAL
 {
     public interface IDAL
     {
-        /* constructor call */
-        IDAL create();
-
         /* Queries */
         //Admin
         bool AdminExistsByKey(string id); /*for testing: does id exist in DB*/
