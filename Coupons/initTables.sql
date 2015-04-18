@@ -1,58 +1,55 @@
 ﻿Create table Customer(
 id varchar(9),
 firstName varchar(10),
-LastName varchar(10),
-email varchar(20),
+lastName varchar(10),
+email varchar(30),
 phone varchar(10),
 age int,
-[password] varchar(10),
-primary key(id)
+[password] varchar(10) NOT NULL,
+primary key(id),
+CONSTRAINT chk_age CHECK (age>=18 AND age<=99)
 );
 
 Create table [Owner](
 id varchar(9),
-[firstName] varchar(30),
-[lastName] varchar(30),
+firstName varchar(10),
+lastName varchar(10),
 email varchar(30),
 phone varchar(10),
-[password]  varchar(30),
-businessId varchar(30) 
+[password] varchar(10) NOT NULL,
 primary key(id)
 );
 
-Create table Admin(
+Create table [Admin](
 id varchar(9),
-firstName varchar(30),
-LastName varchar(30),
+firstName varchar(10),
+LastName varchar(10),
 email varchar(30),
 phone varchar(10),
-[password]  varchar(30),
+[password]  varchar(10) NOT NULL,
 primary key(id)
 );
 
 Create table Category(
-id int,
-name varchar(30) UNIQUE NOT NULL,
-primary key(id)
+name varchar(20),
+primary key(name)
 );
-
+	
 Create table Business(
 id int,
 name varchar(30) UNIQUE,
 ownerId varchar(9), 
-categoryId int,
-[description] varchar(50),
-[address] varchar(30),
+category varchar(20),
+[description] varchar(50) NOT NULL,
+[address] varchar(30) NOT NULL,
 city varchar(30),
+moneyEarned int,
+rating real,
 primary key(id),
 foreign key(ownerId) references Owner(id),
-foreign key(categoryId) references Category(id)
-);
-
-Create table Status(
-id int,
-name varchar(30) UNIQUE NOT NULL,
-primary key(id)
+foreign key(category) references Category(name),
+CONSTRAINT chk_ratingC CHECK (rating>=1 AND rating<=5),
+CONSTRAINT chk_moneyEarned CHECK (moneyEarned>=0)
 );
 
 Create table CouponMaker(
@@ -66,18 +63,19 @@ startDate dateTime,
 endDate dateTime,
 quantity int,
 maxQuantity int,
-[status] int,
+[status] varchar(15),
 business int,
 primary key(id),
-foreign key([status]) references Status(id),
 foreign key(business) references Business(id),
 CONSTRAINT const_price CHECK (originalPrice > couponPrice AND originalPrice >= 0),
-CONSTRAINT const_quantity CHECK (maxQuantity >=quantity AND quantity>=0)
+CONSTRAINT const_quantity CHECK (maxQuantity >=quantity AND quantity>=0),
+CONSTRAINT chk_ratingCM CHECK (rating>=1 AND rating<=5),
+CONSTRAINT chk_status CHECK ([status] in ('AwaitsApproval','approved','active','inactive'))
 );
 
 Create table Coupon(
 serialCode int,
-isActive bit,
+isActive bit NOT NULL,
 couponMaker int,
 customer varchar(9),
 primary key(serialCode),
@@ -85,26 +83,10 @@ foreign key(couponMaker) references CouponMaker(id),
 foreign key(customer) references Customer(id)
 );
 
-Create table CustomerHistory(
+Create table CustomerCategory(
 customerID varchar(9),
-couponID int,
-primary key(customerID, couponID),
+category varchar(20),
+primary key(customerID,category),
 foreign key(customerID) references Customer(id),
-foreign key(couponID) references Coupon(serialCode),
-);
-
-Create table CustomerFavorites(
-customerID varchar(9),
-categoryID int,
-primary key(customerID, categoryID),
-foreign key(customerID) references Customer(id),
-foreign key(categoryID) references Category(id),
-);
-
-Create table BusinessStatistics(
-businessID int,
-rating int,
-moneyEarned int,
-primary key(businessID),
-foreign key(businessID) references Business(id),
+foreign key(category) references Category(name)
 );

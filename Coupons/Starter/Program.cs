@@ -12,6 +12,9 @@ namespace Starter
         static void Main(string[] args)
         {
             CDAL db = new CDAL();
+            db.AdminInsert("2222", "a", "a", "a", "12", "2222");
+            //Console.WriteLine( db.AdminExistsByKey("134"));
+            Console.ReadLine();
         }
     }
 }

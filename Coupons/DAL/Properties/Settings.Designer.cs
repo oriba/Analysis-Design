@@ -26,22 +26,25 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\obarilan\\Documents\\Universi" +
-            "ty\\Analysis-Design\\Coupons\\DAL\\CouponsDatabase.mdf;Integrated Security=True")]
-        public string CouponsDatabaseConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\DB.mdf;Integrated Se" +
+            "curity=True;Connect Timeout=30")]
+        public string DBConnectionString {
             get {
-                return ((string)(this["CouponsDatabaseConnectionString"]));
+                return ((string)(this["DBConnectionString"]));
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\CouponsDatabase.mdf;" +
-            "Integrated Security=True")]
-        public string CouponsDatabaseConnectionString1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\obarilan\\Documents\\Universi" +
+            "ty\\Analysis-Design\\Coupons\\Starter\\bin\\Debug\\DB.mdf;Integrated Security=True;Con" +
+            "nect Timeout=30")]
+        public string REALCS {
             get {
-                return ((string)(this["CouponsDatabaseConnectionString1"]));
+                return ((string)(this["REALCS"]));
+            }
+            set {
+                this["REALCS"] = value;
             }
         }
     }
