@@ -11,10 +11,7 @@ namespace Starter
     {
         static void Main(string[] args)
         {
-            IDAL db = new CDAL();
-            bool ans = db.AdminExistsByKey("30303114");
-            Console.WriteLine(ans);
-            Console.ReadLine();
+            CDAL db = new CDAL();
         }
     }
 }
