@@ -19,5 +19,10 @@ namespace DAL
         void CustomerInsert(string id, string fname, string lname, string email, string phone, int age, string password);
         void CustomerUpdateByKey(string whereID, string fname, string lname, string email, string phone, int age, string password);
         void CustomerDeleteByKey(string whereID);
+        //Owner
+
+        //Category-insert
+
+        //Business-insert&update
     }
 }
