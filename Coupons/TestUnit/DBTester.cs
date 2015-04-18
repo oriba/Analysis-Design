@@ -82,7 +82,7 @@ namespace TestUnit
             using (TransactionScope scope = new TransactionScope())
             {
                 db.CustomerInsert("000000", "adiri", "aviram", "aa@gmail.com", "0523000000", 25, "111111");
-                db.CustomerCategoryInsert("000000", "Food");
+                db.CustomerCategoryInsert("000000", "nonCategory");
             }
         }
 

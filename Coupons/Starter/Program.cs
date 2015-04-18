@@ -15,11 +15,6 @@ namespace Starter
             var dataDirectory = System.IO.Path.GetFullPath(Environment.CurrentDirectory + @"\..\..\..\DAL");
             Console.WriteLine("Running From {0}", dataDirectory);
             AppDomain.CurrentDomain.SetData("DataDirectory", dataDirectory);
-
-            CDAL db = new CDAL();
-            db.AdminInsert("5555", "a", "a", "a", "12", "2222");
-            //Console.WriteLine( db.AdminExistsByKey("3333"));
-            Console.ReadLine();
         }
     }
 }
