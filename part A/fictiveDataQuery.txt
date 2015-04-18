@@ -1,52 +1,49 @@
 ----------------------------------
 insert into Customer
-values ("111111111","ori","BE","ori@gmail.com","0502893789",26,"111");
+values ('333333333','aviram','vahaba','aviram@gmail.com','0503333333',26,'333');
 
 insert into Customer
-values ("222222222","lihi","verchik","lihi@gmail.com","0502893784",12,"222");
-
-insert into Customer
-values ("333333333","aviram","vahaba","aviram@gmail.com","0503333333",26,"333");
+values ('222222222','lihi','verchik','lihi@gmail.com','0502222222',22,'222');
 -----------------------------------
+insert into CustomerCategory
+values ('333333333','food');
+
+insert into CustomerCategory
+values ('333333333','Health And Beauty');
+
+insert into CustomerCategory
+values ('222222222','apparel');
+-----------------------------------
+
 insert into Owner
-values ("111111111","ori","BE","ori@gmail.com","0502893789","111");
+values ('111111111','ori','bar-ilan','ori@gmail.com','0501111111','111');
 
 -----------------------------------
 insert into Admin
-values ("111111111","ori","BE","ori@gmail.com","0502893789","111");
+values ('444444444','lital','morali','lital@gmail.com','0504444444','444');
 
 -----------------------------------
 insert into Business
-values ("1","cafe-cafe","111111111","food","description","BIG","Beer-Sheva");
+values ('1','cafe-cafe','111111111','food','description','BIG','Beer-Sheva',200,4);
 -----------------------------------
 insert into Category
-values ("1","food");
+values ('food');
 
 insert into Category
-values ("2","entartainment");
+values ('entartainment');
 
 insert into Category
-values ("3","health And Beauty");
+values ('Health And Beauty');
 
 insert into Category
-values ("4","apparel");
+values ('apparel');
 
 insert into Category
-values ("5","electronics");
-
------------------------------------
-insert into Status
-values ("1","awaitsApproval");
-insert into Status
-values ("2","approved");
-insert into Status
-values ("3","active");
-insert into Status
-values ("4","inactive");
+values ('electronics');
 
 -----------------------------------
 insert into CouponMaker
-values (1,"name","description",50,30,1,"10-03-2015","15-03-2015",20,30,"awaitsApproval","cafe-cafe");
+values (1,'coupon1','description',50,30,1,'10-04-2015','25-04-2015',20,30,'approved',1);
 -----------------------------------
 insert into Coupon
-values (1,"true",1,"111111111");
+values (1,1,1,'333333333');
