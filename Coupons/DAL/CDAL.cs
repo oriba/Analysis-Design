@@ -14,7 +14,13 @@ namespace DAL
     {
         //Adapters
         private DBCouponsDataSetTableAdapters.AdminTableAdapter adminAdapter = new DBCouponsDataSetTableAdapters.AdminTableAdapter();
+        private DBCouponsDataSetTableAdapters.CustomerTableAdapter customerAdapter = new DBCouponsDataSetTableAdapters.CustomerTableAdapter();
+        private DBCouponsDataSetTableAdapters.OwnerTableAdapter ownerAdapter = new DBCouponsDataSetTableAdapters.OwnerTableAdapter();
+        private DBCouponsDataSetTableAdapters.BusinessTableAdapter businessAdapter = new DBCouponsDataSetTableAdapters.BusinessTableAdapter();
+        private DBCouponsDataSetTableAdapters.CategoryTableAdapter categoryAdapter = new DBCouponsDataSetTableAdapters.CategoryTableAdapter();
+        private DBCouponsDataSetTableAdapters.CustomerCategoryTableAdapter customerCategoryAdapter = new DBCouponsDataSetTableAdapters.CustomerCategoryTableAdapter();
 
+        //Admin
         public bool AdminExistsByKey(string id)
         {
             DBCouponsDataSet.AdminDataTable admins = adminAdapter.GetDataByID(id);
@@ -28,32 +34,84 @@ namespace DAL
 
         public void AdminUpdateByKey(string whereID, string fname, string lname, string email, string phone, string password)
         {
-            throw new NotImplementedException();
+            adminAdapter.UpdateQuery(fname, lname, email, phone, password, whereID);
         }
 
         public void AdminDeleteByKey(string whereID)
         {
-            throw new NotImplementedException();
+            adminAdapter.DeleteQuery(whereID);
         }
 
+        //Customer
         public bool CustomerExistsByKey(string id)
         {
-            throw new NotImplementedException();
+            DBCouponsDataSet.CustomerDataTable customers = customerAdapter.GetDataByID(id);
+            return (customers.Rows.Count != 0);
         }
 
         public void CustomerInsert(string id, string fname, string lname, string email, string phone, int age, string password)
         {
-            throw new NotImplementedException();
+            customerAdapter.InsertQuery(id, fname, lname, email, phone, age, password);
         }
 
-        public void CustomerUpdateByKey(string whereID, string fname, string lname, string email, string phone, int age, string password)
+        public int CustomerUpdateByKey(string whereID, string fname, string lname, string email, string phone, int age, string password)
         {
-            throw new NotImplementedException();
+            return customerAdapter.UpdateQuery(fname, lname, email, phone, age, password, whereID);
         }
 
         public void CustomerDeleteByKey(string whereID)
         {
-            throw new NotImplementedException();
+            customerAdapter.DeleteQuery(whereID);
+        }
+        //Customer-info
+        public string CustomerNameByKey(string id)
+        {
+            return customerAdapter.NameByID(id);
+        }
+
+        //Owner
+        public bool OwnerExistsByKey(string id)
+        {
+            DBCouponsDataSet.OwnerDataTable owners = ownerAdapter.GetDataByID(id);
+            return (owners.Rows.Count != 0);
+        }
+
+        public void OwnerInsert(string id, string fname, string lname, string email, string phone, int age, string password)
+        {
+            ownerAdapter.InsertQuery(id, fname, lname, email, phone, password);
+        }
+
+        public void OwnerUpdateByKey(string whereID, string fname, string lname, string email, string phone, int age, string password)
+        {
+            ownerAdapter.UpdateQuery(fname, lname, email, phone, password, whereID);
+        }
+
+        public void OwnerDeleteByKey(string whereID)
+        {
+            ownerAdapter.DeleteQuery(whereID);
+        }
+
+        //Category
+        public void CategoryInsert(string name)
+        {
+            categoryAdapter.InsertQuery(name);
+        }
+
+        //Business
+        public void BusinessInsert(int id, string name, string ownerid, string category, string description, string adress, string city, int moneyEarned, float rating)
+        {
+            businessAdapter.InsertQuery(id, name, ownerid, category, description, adress, city, moneyEarned, rating);
+        }
+
+        public void BusinessUpdateByKey(int whereID, string name, string ownerid, string category, string description, string adress, string city, int moneyEarned, float rating)
+        {
+            businessAdapter.UpdateQuery(name, ownerid, category, description, adress, city, moneyEarned, rating, whereID);
+        }
+
+        //CustomerCategory
+        public void CustomerCategoryInsert(string customerID, string category)
+        {
+            customerCategoryAdapter.InsertQuery(customerID, category);
         }
     }
 }

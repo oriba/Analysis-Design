@@ -17,7 +17,7 @@ namespace Starter
             AppDomain.CurrentDomain.SetData("DataDirectory", dataDirectory);
 
             CDAL db = new CDAL();
-            db.AdminInsert("4444", "a", "a", "a", "12", "2222");
+            db.AdminInsert("5555", "a", "a", "a", "12", "2222");
             //Console.WriteLine( db.AdminExistsByKey("3333"));
             Console.ReadLine();
         }
