@@ -56,10 +56,10 @@
   <ItemGroup>
     <Compile Include="DB.cs" />
     <Compile Include="CDAL.cs" />
-    <Compile Include="DBDataSet.Designer.cs">
+    <Compile Include="DBCouponsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBDataSet.xsd</DependentUpon>
+      <DependentUpon>DBCouponsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="IDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,16 +71,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="DBDataSet.xsc">
-      <DependentUpon>DBDataSet.xsd</DependentUpon>
+    <None Include="DBCouponsDataSet.xsc">
+      <DependentUpon>DBCouponsDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DBDataSet.xsd">
+    <None Include="DBCouponsDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBCouponsDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DBDataSet.xss">
-      <DependentUpon>DBDataSet.xsd</DependentUpon>
+    <None Include="DBCouponsDataSet.xss">
+      <DependentUpon>DBCouponsDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,12 +105,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB.mdf">
+    <Content Include="DBCoupons.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DB_log.ldf">
+    <Content Include="DBCoupons_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DB.mdf</DependentUpon>
+      <DependentUpon>DBCoupons.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

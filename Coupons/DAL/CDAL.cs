@@ -13,19 +13,17 @@ namespace DAL
     public class CDAL : IDAL
     {
         //Adapters
-        private DBDataSet ds = new DBDataSet();
-        private DBDataSetTableAdapters.AdminTableAdapter adminAdapter = new DBDataSetTableAdapters.AdminTableAdapter();
+        private DBCouponsDataSetTableAdapters.AdminTableAdapter adminAdapter = new DBCouponsDataSetTableAdapters.AdminTableAdapter();
 
         public bool AdminExistsByKey(string id)
         {
-            DBDataSet.AdminDataTable admins = adminAdapter.GetDataByID(id);
+            DBCouponsDataSet.AdminDataTable admins = adminAdapter.GetDataByID(id);
             return (admins.Rows.Count != 0);
         }
 
         public void AdminInsert(string id, string fname, string lname, string email, string phone, string password)
         {
             adminAdapter.InsertQuery(id, fname, lname, email, phone, password);
-            ds.AcceptChanges();
         }
 
         public void AdminUpdateByKey(string whereID, string fname, string lname, string email, string phone, string password)

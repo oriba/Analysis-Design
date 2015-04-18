@@ -45,5 +45,17 @@ namespace Starter.Properties {
                 return ((string)(this["DBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\obarilan\\Documents\\Universi" +
+            "ty\\Analysis-Design\\Coupons\\DAL\\DBCoupons.mdf;Integrated Security=True;Connect Ti" +
+            "meout=30")]
+        public string DBCouponsConnectionString {
+            get {
+                return ((string)(this["DBCouponsConnectionString"]));
+            }
+        }
     }
 }
