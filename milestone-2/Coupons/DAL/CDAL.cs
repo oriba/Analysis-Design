@@ -113,5 +113,51 @@ namespace DAL
         {
             customerCategoryAdapter.InsertQuery(customerID, category);
         }
+
+
+        public void BusinessDeleteByKey(int whereID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CategoryDeleteByKey(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CouponInsert(int serialCode, bool isActive, int couponMaker, string customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CouponUpdateByKey(int whereSerialCode, bool isActive, int couponMaker, string customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CouponDeleteByKey(int whereserialCode)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CouponMakerInsert(int id, string name, string description, int originalPrice, int couponPrice, float rating, DateTime startDate, DateTime endDate, int quantity, int maxQuantity, string status, int business)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CouponMakerUpdateByKey(int whereID, string name, string description, int originalPrice, int couponPrice, float rating, DateTime startDate, DateTime endDate, int quantity, int maxQuantity, string status, int business)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CouponMakerDeleteByKey(int whereID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CustomerCategoryDeleteByKey(string customerID, string category)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
