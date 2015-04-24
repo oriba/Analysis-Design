@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\PL\bin\PL.dll.config
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\PL\bin\PL.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\PL\bin\PL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\PL\obj\Debug\PL.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\PL\obj\Debug\PL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache

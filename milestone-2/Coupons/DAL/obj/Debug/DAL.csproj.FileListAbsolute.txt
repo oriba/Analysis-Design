@@ -14,3 +14,10 @@ C:\Users\aviram\Documents\Analysis-Design\Coupons\DAL\bin\Debug\DAL.pdb
 C:\Users\aviram\Documents\Analysis-Design\Coupons\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\aviram\Documents\Analysis-Design\Coupons\DAL\obj\Debug\DAL.dll
 C:\Users\aviram\Documents\Analysis-Design\Coupons\DAL\obj\Debug\DAL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\bin\Debug\DBCoupons.mdf
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\bin\Debug\DBCoupons_log.ldf
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\bin\Debug\DAL.dll.config
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\bin\Debug\DAL.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\bin\Debug\DAL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\obj\Debug\DAL.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\obj\Debug\DAL.pdb

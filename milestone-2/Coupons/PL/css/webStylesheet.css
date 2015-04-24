@@ -1,0 +1,86 @@
+﻿#top_banner{
+    background-image:url(../images/460009-grey-texture.jpg);
+}
+
+#logo{
+    height:100px;
+    width:200px;
+    display:inline-block;
+}
+
+#login{
+    margin-left:95%;
+    color:white;
+    text-decoration:none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#search{
+        margin-left:25%;
+        margin-right:auto;
+        margin-bottom:10px;
+        display:inline-block;
+}
+
+#searchText{
+    border-radius:5px;
+    height: 30px;
+    background-color:#f2f2f2;
+}
+
+#searchButton{
+      width: 30px;
+      height: 30px;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+}
+ 
+#searchButton:hover {
+  
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #808080;
+}
+
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0; 
+}
+
+#nav li {
+	float: left; 
+
+}
+#nav li a {
+	display: block;
+	padding: 15px 25px;
+	text-decoration: none;
+    font-size:1.1em;
+	font-weight: bold;
+	color: #b6ff00;
+	border-right: 1px solid #1f1d1d; 
+    margin:5px 0px;
+}
+
+#nav li:first-child a{
+	border-left: 1px solid #1f1d1d; 
+}
+
+#nav li a:hover {
+	color: #fff; 
+}
