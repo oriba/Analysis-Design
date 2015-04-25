@@ -21,3 +21,4 @@ C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analy
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\bin\Debug\DAL.pdb
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\obj\Debug\DAL.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\obj\Debug\DAL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
