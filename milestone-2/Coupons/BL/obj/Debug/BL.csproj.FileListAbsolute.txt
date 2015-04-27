@@ -1,0 +1,10 @@
+C:\Users\aviram\Documents\Analysis-Design\Coupons\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\aviram\Documents\Analysis-Design\Coupons\BL\bin\Debug\BL.dll
+C:\Users\aviram\Documents\Analysis-Design\Coupons\BL\bin\Debug\BL.pdb
+C:\Users\aviram\Documents\Analysis-Design\Coupons\BL\obj\Debug\BL.dll
+C:\Users\aviram\Documents\Analysis-Design\Coupons\BL\obj\Debug\BL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\BL\bin\Debug\BL.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\BL\bin\Debug\BL.pdb
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\BL\obj\Debug\BL.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\Coupons\BL\obj\Debug\BL.pdb

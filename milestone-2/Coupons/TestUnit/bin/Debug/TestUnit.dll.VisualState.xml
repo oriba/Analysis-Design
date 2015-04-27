@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1011]C:\Users\obarilan\Documents\University\Analysis-Design\Coupons\TestUnit\bin\Debug\TestUnit.dll</TopNode>
+  <SelectedNode>[0-1000]TestUnit.DBTester</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1011]C:\Users\obarilan\Documents\University\Analysis-Design\Coupons\TestUnit\bin\Debug\TestUnit.dll" Expanded="true" />
+    <Node UniqueName="[0-1012]TestUnit" Expanded="true" />
+    <Node UniqueName="[0-1000]TestUnit.DBTester" Expanded="true" />
+  </Nodes>
+</VisualState>
