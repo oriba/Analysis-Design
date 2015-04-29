@@ -1,52 +1,65 @@
-﻿@model IEnumerable<Coupons.Models.CouponMaker>
+﻿@model PagedList.IPagedList<Coupons.Models.CouponMaker>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "CouponMaker";
 }
 
-<h2>Index</h2>
+<h2>Coupons</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+@using (Html.BeginForm("Index", "CouponMaker", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+    <p>
+        Select Coupons Category: @Html.DropDownList("SelectedCouponMakers", "All")
+        <input type="submit" value="Filter" />
+    </p>
+}
 <table class="table">
+
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.name)
+            @Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.description)
+            Description
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.originalPrice)
+            Original price
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.couponPrice)
+            @Html.ActionLink("Price", "Index", new { sortOrder = ViewBag.PriceSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.rating)
+            Rating
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.numOfRaters)
+            Number of raters
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.startDate)
+            @Html.ActionLink("Start date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.endDate)
+            End date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.quantity)
+            Quantity
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.maxQuantity)
+            Max quantity
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.status)
+            Status
         </th>
         <th></th>
     </tr>
-
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -91,3 +104,8 @@
 }
 
 </table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

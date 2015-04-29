@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Coupons.DAL;
 using Coupons.Models;
+using PagedList;
 
 namespace Coupons.Controllers
 {
@@ -16,12 +17,40 @@ namespace Coupons.Controllers
         private CouponsContext db = new CouponsContext();
 
         // GET: CouponMaker
-        public ActionResult Index(string sortOrder)
+        public ActionResult Index(string sortOrder, string searchString,string currentFilter, int? page, Category? SelectedCouponMakers)
         {
+            ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewBag.PriceSortParm = sortOrder == "Price" ? "price_desc" : "Price";
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
             var couponMakers = from s in db.CouponMaker
-                           select s;
+                               select s;
+            ViewBag.SelectedCouponMakers = new SelectList(couponMakers, "Category", "Name", SelectedCouponMakers);
+            Category couponCategory = SelectedCouponMakers.GetValueOrDefault();
+
+            IQueryable<CouponMaker> couponMaker = db.CouponMaker
+        .Where(c => !SelectedCouponMakers.HasValue || c.business.category == couponCategory)
+        .OrderBy(d => d.name);
+        //.Include(d => d);
+            var sql = couponMakers.ToString(); //added
+            
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                couponMakers = couponMakers.Where(s => s.name.Contains(searchString)
+                                       || s.description.Contains(searchString));
+            }
+
             switch (sortOrder)
             {
                 case "name_desc":
@@ -33,11 +62,19 @@ namespace Coupons.Controllers
                 case "date_desc":
                     couponMakers = couponMakers.OrderByDescending(s => s.startDate);
                     break;
+                case "Price":
+                    couponMakers = couponMakers.OrderBy(s => s.couponPrice);
+                    break;
+                case "price_desc":
+                    couponMakers = couponMakers.OrderByDescending(s => s.couponPrice);
+                    break;
                 default:
-                    couponMakers = couponMakers.OrderBy(s => s.ID);
+                    couponMakers = couponMakers.OrderBy(s => s.name);
                     break;
             }
-            return View(couponMakers.ToList());
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(couponMakers.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: CouponMaker/Details/5
