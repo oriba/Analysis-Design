@@ -17,7 +17,7 @@ build/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
-
+obj/
 *_i.c
 *_p.c
 *.ilk
@@ -54,7 +54,6 @@ ipch/
 *.psess
 *.vsp
 *.vspx
-obj/
 
 # Guidance Automation Toolkit
 *.gpState
