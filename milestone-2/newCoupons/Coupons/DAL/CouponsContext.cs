@@ -13,13 +13,14 @@ namespace Coupons.DAL
             public CouponsContext() : base("CouponsContext")
         {
         }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Admin> Admins { get; set; }
-        public DbSet<Business> Businesses { get; set; }
-        public DbSet<Coupon> Coupons { get; set; }
-        public DbSet<CouponMaker> CouponMakers { get; set; }
-        public DbSet<Owner> Owners { get; set; }
-        public DbSet<Business> Businesses { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Admin> Admin { get; set; }
+        public DbSet<Owner> Owner { get; set; }
+        public DbSet<Business> Business { get; set; }
+        public DbSet<Coupon> Coupon { get; set; }
+        public DbSet<CouponMaker> CouponMaker { get; set; }
+        //public DbSet<Category> Categories { get; set; }
+        //public DbSet<Status> Statuses { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

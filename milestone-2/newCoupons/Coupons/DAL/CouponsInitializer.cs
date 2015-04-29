@@ -10,42 +10,52 @@ namespace Coupons.DAL
     {
         protected override void Seed(CouponsContext context)
         {
-           /* var students = new List<Student>
+            var Customer = new List<Customer>
             {
-            new Customer{ID="111111111",firstName="Israel",lastName="Israeli",email="israel@gmail.com",phone="050-1111111",password="1111",age=25,
+            new Customer{ID="111111111",firstName="Israel",lastName="Israeli",email="israel@gmail.com",phone="050-1111111",password="1111",age=25,},
+            new Customer{ID="222222222",firstName="Dan",lastName="Daniel",email="dan@gmail.com",phone="050-2222222",password="2222",age=26,}
+
             };
 
-            students.ForEach(s => context.Students.Add(s));
+            Customer.ForEach(s => context.Customer.Add(s));
             context.SaveChanges();
-            var courses = new List<Course>
+
+            var Owner = new List<Owner>
             {
-            new Course{CourseID=1050,Title="Chemistry",Credits=3,},
-            new Course{CourseID=4022,Title="Microeconomics",Credits=3,},
-            new Course{CourseID=4041,Title="Macroeconomics",Credits=3,},
-            new Course{CourseID=1045,Title="Calculus",Credits=4,},
-            new Course{CourseID=3141,Title="Trigonometry",Credits=4,},
-            new Course{CourseID=2021,Title="Composition",Credits=3,},
-            new Course{CourseID=2042,Title="Literature",Credits=4,}
+            new Owner{ID="333333333",firstName="Tal",lastName="Tali",email="tal@gmail.com",phone="050-3333333",password="3333",},
+            new Owner{ID="444444444",firstName="Avi",lastName="Aviv",email="avi@gmail.com",phone="050-4444444",password="4444",},
+            
             };
-            courses.ForEach(s => context.Courses.Add(s));
+            Owner.ForEach(s => context.Owner.Add(s));
             context.SaveChanges();
-            var enrollments = new List<Enrollment>
+
+            var Admin = new List<Admin>
             {
-            new Enrollment{StudentID=1,CourseID=1050,Grade=Grade.A},
-            new Enrollment{StudentID=1,CourseID=4022,Grade=Grade.C},
-            new Enrollment{StudentID=1,CourseID=4041,Grade=Grade.B},
-            new Enrollment{StudentID=2,CourseID=1045,Grade=Grade.B},
-            new Enrollment{StudentID=2,CourseID=3141,Grade=Grade.F},
-            new Enrollment{StudentID=2,CourseID=2021,Grade=Grade.F},
-            new Enrollment{StudentID=3,CourseID=1050},
-            new Enrollment{StudentID=4,CourseID=1050,},
-            new Enrollment{StudentID=4,CourseID=4022,Grade=Grade.F},
-            new Enrollment{StudentID=5,CourseID=4041,Grade=Grade.C},
-            new Enrollment{StudentID=6,CourseID=1045},
-            new Enrollment{StudentID=7,CourseID=3141,Grade=Grade.A},
+            new Admin{ID="000000000",firstName="Dana",lastName="Daniel",email="dana@gmail.com",phone="050-0000000",password="0000",}
             };
-            enrollments.ForEach(s => context.Enrollments.Add(s));
-            context.SaveChanges();*/
+            Admin.ForEach(s => context.Admin.Add(s));
+            context.SaveChanges();
+            
+            var Business = new List<Business>
+            {
+            new Business{ID=1,name="mcDonalds",ownerID="333333333",category=Coupons.Models.Category.FOOD, description="hamburgers", address="rager 20 Beer-sheva",city="Beer-Sheva",moneyEarned=100}
+            };
+            Business.ForEach(s => context.Business.Add(s));
+            context.SaveChanges();
+
+            var CouponMaker = new List<CouponMaker>
+            {
+            new CouponMaker{ID=1,name="mcCoupon",description="best price", originalPrice=50,couponPrice=25,rating=2,numOfRaters=1,startDate=DateTime.Parse("2015-04-04"),endDate=DateTime.Parse("2015-05-05"),quantity=0,maxQuantity=100,status=Coupons.Models.Status.ACTIVE}
+            };
+            CouponMaker.ForEach(s => context.CouponMaker.Add(s));
+            context.SaveChanges();
+
+            var Coupon = new List<Coupon>
+            {
+            new Coupon{ID=2,isActive=true,CouponMakerID=1,CustomerID="111111111",}
+            };
+            Coupon.ForEach(s => context.Coupon.Add(s));
+            context.SaveChanges();
         }
     }
 }

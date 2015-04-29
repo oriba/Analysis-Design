@@ -10,14 +10,12 @@ namespace Coupons.Models
     {
         public int ID { get; set; }
         public string name { get; set; }
-        public int ownerID { get; set; }
+        public string ownerID { get; set; }
         public Category category;
         public string description;
         public string address;
+        public string city;
         public int moneyEarned;
-        public int rating;
-        public int numOfRaters;
-
 
         public virtual Owner owner { get; set; }
     }
