@@ -18,8 +18,8 @@ namespace Coupons.Controllers
         // GET: Business
         public ActionResult Index()
         {
-            var business = db.Business.Include(b => b.owner);
-            return View(business.ToList());
+           // var business = db.Business.Include(b => b.owner);
+            return View(db.Business.ToList());
         }
 
         // GET: Business/Details/5
