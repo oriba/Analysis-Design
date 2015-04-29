@@ -53,3 +53,5 @@ C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new p
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new project\Coupons\Coupons\obj\Debug\Coupons.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new project\Coupons\Coupons\obj\Debug\Coupons.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new project\Coupons\Coupons\obj\Debug\Coupons.pdb
+C:\Users\lital morali\Documents\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.csprojResolveAssemblyReference.cache
+C:\Users\lital morali\Documents\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.dll
