@@ -53,6 +53,10 @@ C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new p
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new project\Coupons\Coupons\obj\Debug\Coupons.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new project\Coupons\Coupons\obj\Debug\Coupons.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\new project\Coupons\Coupons\obj\Debug\Coupons.pdb
+<<<<<<< HEAD
+C:\Users\lital morali\Documents\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.csprojResolveAssemblyReference.cache
+C:\Users\lital morali\Documents\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.dll
+=======
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\Antlr3.Runtime.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\EntityFramework.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\EntityFramework.SqlServer.dll
@@ -108,3 +112,4 @@ C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analy
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.pdb
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.csprojResolveAssemblyReference.cache
+>>>>>>> 04954023c7ba40fd1eb936abe8d8a0c2a4890012
