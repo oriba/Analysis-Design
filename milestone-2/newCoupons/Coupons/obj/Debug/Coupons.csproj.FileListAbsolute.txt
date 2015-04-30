@@ -106,4 +106,12 @@ C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analy
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.dll
 C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.pdb
+<<<<<<< HEAD
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\obj\Debug\Coupons.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\PagedList.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\PagedList.Mvc.dll
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\PagedList.xml
+C:\Users\user\Desktop\לימודים\סמסטר ד\ניתוח ועיצוב\Analysis-Design\milestone-2\newCoupons\Coupons\bin\PagedList.Mvc.xml
+=======
 >>>>>>> 5204b39119734dc3a32ad8566af951da1482d9ba
+>>>>>>> 06a6a5a2b7957807844211501781529c1828d080
